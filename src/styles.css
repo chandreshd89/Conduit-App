@@ -1,0 +1,686 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*General*/
+* {
+  font-size: 16px;
+}
+:root {
+  --green: var(#5cb85c);
+  --lightgrey: var(#f3f3f3);
+  --darkgrey: var(#687077);
+  --white: var(#ffff);
+}
+body {
+  box-sizing: border-box;
+}
+
+/*Flex*/
+
+.flex {
+  display: flex;
+}
+
+.flex-space {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+}
+
+.flexEnd {
+  display: flex;
+  align-self: flex-end;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 1200px;
+  margin: 2rem auto;
+}
+
+.col {
+  flex-direction: column;
+}
+/*Header*/
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #5cb85c;
+}
+
+li {
+  margin-right: 2rem;
+  color: var(--lightgrey);
+}
+
+/*Hero*/
+
+.hero {
+  background-color: green;
+}
+
+.hero h2 {
+  color: white;
+  font-size: 4rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/*global-feed*/
+
+.feed {
+  background-color: white;
+  border: none;
+  margin-left: 2rem;
+}
+
+.global-feed {
+  width: 75%;
+}
+
+.global-feed h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #5cb85c;
+  margin: 5rem 0 1rem 5rem;
+}
+.global {
+  background-color: white;
+  color: green;
+  border: none;
+  outline: none;
+}
+
+.active {
+  border-bottom: 3px solid green;
+}
+
+NavLink {
+  text-decoration: none;
+}
+.details {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  padding: 2rem 0;
+  margin: 0 2rem 0 5rem;
+}
+
+.details i {
+  font-size: 2rem;
+}
+
+.details h4 {
+  font-size: 1.2rem;
+}
+.details h5 {
+  font-size: 1.5rem;
+  padding: 1rem 0 0.5rem 0;
+}
+
+.details h4,
+small {
+  margin-left: 1rem;
+}
+
+.details span {
+  color: rgb(187, 184, 184);
+  font-size: 1.2rem;
+}
+
+.readMore-btn {
+  padding-top: 1.5rem;
+}
+
+.details button {
+  outline: none;
+  border: none;
+  background-color: white;
+  font-size: 0.8rem;
+  color: rgb(187, 184, 184);
+}
+
+.click-box {
+  border: 1px solid black;
+  width: 40px;
+  height: 30px;
+  border-radius: 6px;
+}
+.click-box i {
+  font-size: 0.9rem;
+}
+
+.tags-card {
+  background-color: #f3f3f3;
+  width: 30%;
+  height: 100%;
+  margin: 5rem 2rem 0 1rem;
+  border-radius: 6px;
+}
+
+.tags {
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  background-color: #687077;
+  color: white;
+  margin: 0.5rem;
+}
+
+.details .tags-btn {
+  border: 1px solid rgb(187, 184, 184);
+  padding: 0.5rem;
+  border-radius: 0.6rem;
+  margin-left: 0.5rem;
+}
+.feedContainer {
+  width: 1000px;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.click-box {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ml10 {
+  margin: 2rem 0 5rem 10rem;
+  flex-wrap: wrap;
+}
+
+/*signin*/
+
+.signIn,
+.settings,
+.signUp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mt-1 {
+  margin: 0;
+  margin-top: 1rem;
+}
+
+textarea:focus {
+  outline-color: green;
+}
+input:focus {
+  outline-color: green;
+}
+
+.btn-primary {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-primary button {
+  background-color: green;
+  border: none;
+  outline: none;
+  color: white;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  border-radius: 6px;
+}
+.newArticle {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+}
+
+.settings h2 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+input {
+  margin: 1rem;
+  padding: 0.8rem 8rem;
+}
+
+fieldset h4 {
+  font-size: 3rem;
+}
+
+fieldset h5 {
+  margin: 0.5rem;
+  color: blue;
+}
+
+fieldset button {
+  outline: none;
+  border: none;
+  background-color: orange;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  margin-left: 23rem;
+}
+
+.nav button {
+  border: none;
+  outline: none;
+  background-color: white;
+}
+
+.none {
+  text-decoration: none;
+  color: green;
+}
+
+/*Article*/
+
+.article h2 {
+  color: white;
+
+  margin-left: 3rem;
+  font-size: 3rem;
+}
+
+.article-header {
+  background-color: black;
+  padding: 2rem;
+}
+
+.article img {
+  margin-left: 3rem;
+}
+
+.article h4 {
+  color: white;
+  margin: 1rem;
+}
+
+.article p {
+  margin: 1rem 0 1rem 5rem;
+}
+
+strong {
+  color: #5cb85c;
+}
+
+.articlepara {
+  border: 1px solid grey;
+  margin: 0.5rem auto;
+  width: 1200px;
+  border-radius: 6px;
+}
+
+.articlepara p {
+  color: grey;
+  padding: 1.5rem 0;
+  padding-left: 1rem;
+}
+.userdetails {
+  border-top: 1px solid grey;
+  padding: 0.5rem 0;
+  background-color: bisque;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  color: grey;
+  padding-left: 1rem;
+}
+.userdetails img {
+  width: 30px;
+  height: 30px;
+}
+.userdetails h4 {
+  color: grey;
+  padding-left: 1rem;
+  margin: 0;
+}
+
+/* PAGINATION */
+.pagination {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pagination p {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.pagination-count2 {
+  cursor: pointer;
+  color: #b85c5c;
+  margin: 0.5rem;
+  border: 1px solid #b85c5c;
+}
+
+.pagination-count2:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #b85c5c;
+  margin: 0.5rem;
+}
+
+.pagination-count1 {
+  cursor: pointer;
+  color: white;
+  background-color: #b85c5c;
+  margin: 0.5rem;
+}
+
+.pagination p {
+  background-color: black;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 1rem;
+  margin-left: 4rem;
+}
+.tabs {
+  display: flex;
+  margin: 2rem 0 1rem 5rem;
+}
+
+/*css for fieldset*/
+
+.App {
+  text-align: center;
+  background-color: green;
+}
+
+.label {
+  display: block;
+  font-size: larger;
+  color: white;
+  padding: 5px;
+}
+
+.input {
+  font-size: larger;
+  padding: 5px;
+  margin: 2px;
+}
+.btn {
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  font-size: larger;
+  display: block;
+  padding: 5px;
+  margin: 10px auto;
+}
+
+.messages {
+  display: flex;
+  justify-content: center;
+}
+
+.error {
+  display: block;
+  background-color: red;
+  color: white;
+  width: fit-content;
+  height: 50px;
+  padding: 5px;
+}
+
+.success {
+  display: block;
+  background-color: lightblue;
+  color: black;
+  width: fit-content;
+  height: 50px;
+  padding: 5px;
+}
+
+/*Comments*/
+
+.comments {
+  background-color: black;
+  color: white;
+  padding: 2rem;
+}
+.comments h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.changes button {
+  background-color: black;
+  color: white;
+  border: 1px solid lightgrey;
+  margin-left: 1rem;
+  border-radius: 3px;
+}
+
+.changes .red {
+  color: red;
+  border: 1px solid red;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  border: 1px solid lightgrey;
+  margin-left: 5rem;
+  border-radius: 3px;
+}
+
+.comment {
+  width: 1200px;
+  margin-left: 5rem;
+}
+
+/*Profile*/
+
+.user {
+  background-color: lightcyan;
+  margin: 2rem 0;
+  padding: 1rem 0;
+}
+.userImg {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-left: 2rem;
+}
+
+.user P {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.user span {
+  color: lightgray;
+  margin-left: 1rem;
+}
+
+.user button {
+  background-color: aquamarine;
+  outline: none;
+  border-color: lightgray;
+  padding: 0.5rem 1rem;
+}
+
+#file {
+  padding: 0;
+}
+
+.logOut {
+  margin-top: 0.5rem;
+}
+
+.logOut button {
+  color: pink;
+  background-color: #687077;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.feedContainer h3 {
+  margin-left: 5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
